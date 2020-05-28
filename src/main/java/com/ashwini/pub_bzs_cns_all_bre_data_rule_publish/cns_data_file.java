@@ -8,7 +8,32 @@ public class cns_data_file implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private java.lang.Integer data_ppmonth;
+	private java.math.BigDecimal factors;
+
 	public cns_data_file() {
+	}
+
+	public java.lang.Integer getData_ppmonth() {
+		return this.data_ppmonth;
+	}
+
+	public void setData_ppmonth(java.lang.Integer data_ppmonth) {
+		this.data_ppmonth = data_ppmonth;
+	}
+
+	public java.math.BigDecimal getFactors() {
+		return this.factors;
+	}
+
+	public void setFactors(java.math.BigDecimal factors) {
+		this.factors = factors;
+	}
+
+	public cns_data_file(java.lang.Integer data_ppmonth,
+			java.math.BigDecimal factors) {
+		this.data_ppmonth = data_ppmonth;
+		this.factors = factors;
 	}
 
 }
